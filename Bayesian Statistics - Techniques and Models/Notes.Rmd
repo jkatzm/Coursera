@@ -1,6 +1,7 @@
 ---
 title: 'Coursera Notes for Bayesian Statistics: Techniques and Models'
 author: "Jordan Katz"
+date: "June 1, 2020"
 output: pdf_document
 ---
 
