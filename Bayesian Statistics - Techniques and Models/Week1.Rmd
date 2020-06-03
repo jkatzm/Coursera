@@ -9,7 +9,7 @@ output: pdf_document
 # Week 1
 ### Bayesian Modeling
 
-data $y$, parameter $\theta$  
+data(s) $y$, parameter(s) $\theta$  
 likelihood: $p(y | \theta)$  
 prior: $p(\theta)$  
 posterior: $p(\theta | y)$  
@@ -17,7 +17,9 @@ $$
 p(\theta | y) = \frac{p(y | \theta) p(\theta)}{\int p(y|\theta)p(\theta) d\theta}
 \propto p(y | \theta) p(\theta)
 $$
-If we do not use conjugate priors, or if the models are more complicated, then the posterior distribution may not have a "standard" or well-known form.
+Denominator also called "normalizing constant" since $\theta$ does not occur in the expression. If we do not use conjugate priors, or if the models are more complicated, then the posterior distribution may not have a "standard" or well-known form.
+
+The Maximum Likelihood Estimator (MLE) $\hat{\theta}$ is the argmax$_\theta$ of the likelihood function. We can use $\log$ likelihood since the $\log$ function is monotonically increasing.
 
 ### Monte Carlo Estimation
 Using simulation to determine some properties of a distribution, e.g. mean, variance, probability of an event, quantiles (which all use integration)  
